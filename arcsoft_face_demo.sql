@@ -18,7 +18,7 @@ CREATE TABLE `user_face_info` (
   `face_feature` blob COMMENT '人脸特征',
   `create_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
   `update_time` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
-  `fpath` varchar(255) NOT NULL COMMENT '照片路径',
+  `fpath` varchar(255)  COMMENT '照片路径',
   PRIMARY KEY (`id`) USING BTREE,
   KEY `GROUP_ID` (`group_id`) USING BTREE
 ) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8mb4 ROW_FORMAT=DYNAMIC;
